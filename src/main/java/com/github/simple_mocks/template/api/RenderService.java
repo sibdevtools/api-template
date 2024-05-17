@@ -7,10 +7,8 @@ package com.github.simple_mocks.template.api;
 public interface RenderService {
 
     /**
-     * Find template by passed qualifier and render it used render context.
-     * <p>
+     * Find template by passed qualifier and render it used render context.<br/>
      * In case if template not found {@link TemplateErrors#NOT_FOUND} will be thrown.
-     * </p>
      *
      * @param templateQualifier template qualifier
      * @param renderContext     template render context
@@ -19,10 +17,8 @@ public interface RenderService {
     Rendered render(TemplateQualifier templateQualifier, RenderContext renderContext);
 
     /**
-     * Find template by template identifier and render it used render context.
-     * <p>
+     * Find template by template identifier and render it used render context.<br/>
      * In case if template not found {@link TemplateErrors#NOT_FOUND} will be thrown.
-     * </p>
      *
      * @param templateId    template identifier
      * @param renderContext template render context

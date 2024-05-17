@@ -5,7 +5,16 @@ package com.github.simple_mocks.template.api;
  * @since 0.0.1
  */
 public enum OutputType {
+    /**
+     * Render as string
+     */
     TEXT,
+    /**
+     * Render as PDF document
+     */
     PDF,
-    BYTES
+    /**
+     * Render as JSON
+     */
+    JSON
 }

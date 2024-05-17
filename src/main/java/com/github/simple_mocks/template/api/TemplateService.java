@@ -10,21 +10,15 @@ import java.util.Map;
 public interface TemplateService {
 
     /**
-     * Create a new template.
-     * <p>
+     * Create a new template.<br/>
      * Template type value examples:
      *     <ul>
      *         <li>FREEMAKER</li>
      *         <li>JASPER</li>
      *         <li>JS</li>
      *     </ul>
-     * </p>
-     * <p>
-     *     Template qualifier used as additional identifiers for the template instance.
-     * </p>
-     * <p>
-     *     If template with passed code and qualifiers already exists then {@link TemplateErrors#ALREADY_EXIST} will be thrown.
-     * </p>
+     * Template qualifier used as additional identifiers for the template instance.<br/>
+     * If template with passed code and qualifiers already exists then {@link TemplateErrors#ALREADY_EXIST} will be thrown.
      *
      * @param code        template code
      * @param description template description
@@ -40,10 +34,8 @@ public interface TemplateService {
                   byte[] content);
 
     /**
-     * Delete a template by identifier.
-     * <p>
+     * Delete a template by identifier.<br/>
      * In case if template not found {@link TemplateErrors#NOT_FOUND} will be thrown.
-     * </p>
      *
      * @param templateId template identifier
      * @return true - template was deleted, false - otherwise

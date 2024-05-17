@@ -8,7 +8,13 @@ import jakarta.annotation.Nonnull;
  * @since 0.0.1
  */
 public enum TemplateErrors implements ServiceError {
+    /**
+     * The requested element not found
+     */
     NOT_FOUND,
+    /**
+     * Some element already exists and cannot be created
+     */
     ALREADY_EXIST;
 
 

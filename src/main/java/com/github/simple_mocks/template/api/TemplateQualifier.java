@@ -16,10 +16,21 @@ public record TemplateQualifier(
         BiFunction<Template, Template, Template> selector,
         List<Predicate<Template>> predicates
 ) {
+    /**
+     * Contractor for creating qualifier without predicates
+     *
+     * @param code     template code
+     * @param selector template selector
+     */
     public TemplateQualifier(String code, BiFunction<Template, Template, Template> selector) {
         this(code, selector, Collections.emptyList());
     }
 
+    /**
+     * Contractor for creating qualifier without predicates and with default selector {@link TemplateLatestSelector}
+     *
+     * @param code template code
+     */
     public TemplateQualifier(String code) {
         this(code, new TemplateLatestSelector(), Collections.emptyList());
     }
