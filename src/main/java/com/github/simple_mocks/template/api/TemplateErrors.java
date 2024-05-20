@@ -15,7 +15,11 @@ public enum TemplateErrors implements ServiceError {
     /**
      * Some element already exists and cannot be created
      */
-    ALREADY_EXIST;
+    ALREADY_EXIST,
+    /**
+     * Unexpected exception happened
+     */
+    UNEXPECTED_ERROR;
 
 
     @Nonnull
